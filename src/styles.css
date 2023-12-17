@@ -6,6 +6,11 @@
     --dark: #1B2C51;
 }
 
+/*Criei body*/
+body{
+    background-color: rgb(195, 31, 31);
+}
+
 .fw-medium {
     font-weight: 500 !important;
 }
