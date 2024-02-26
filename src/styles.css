@@ -109,7 +109,8 @@ body{
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    /*color: var(--primary);*/
+    color: cyan;
 }
 
 @media (max-width: 991.98px) {
@@ -129,7 +130,8 @@ body{
 }
 
 .navbar .navbar-nav .nav-link {
-    color: var(--dark);
+    /*color: var(--dark);*/
+    color: white;
     font-weight: 500;
 }
 
@@ -538,9 +540,10 @@ body{
 }
 
 /*** Carousel12 ***/
-  p {
+p {
     color: #b3b3b3;
     font-weight: 300; }
+
   
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -604,3 +607,47 @@ body{
       .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
         outline: none; }
   
+
+
+
+
+
+
+        /*Expandir textimonial*/
+        .testimonial-text {
+            max-height: 170px; /* limite de altura inicial */
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .testimonial-text.expanded {
+            max-height: none; /* removendo o limite de altura */
+        }
+    
+        
+
+
+        /*criei*/
+        /*fundo da pagina*/
+    body {
+        background-image: url('/assets/img/quir194x259.jpg');
+        background-size: 1520px; /* Para cobrir todo o fundo */
+        background-position: center; /* Para centralizar a imagem */
+        background-attachment: fixed; /* Fixar a imagem */
+        background-repeat: no-repeat; /*Não deixa repetir as imagens*/
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    /*criei*/
+    h1{
+        color: var(--primary);
+    }
+
+    /*criei*/
+    .p-sobrefundo{
+        color: white;
+        font-weight: 300;
+        /*font-weight: bold;/*para ficar em negrito*/
+    }
